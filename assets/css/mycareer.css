@@ -1,0 +1,1157 @@
+/******************************************* variables *******************************************/
+:root {
+    --main-color: #c04ae2;
+    --font-size-18: 18px;
+    --main-font: "Overpass", sans-serif;
+    --fw-900: 900;
+    --primary-text-color: #52504e;
+    --secondary-text-color: rgb(212, 16, 218);
+    --hover-effect: all 0.5s;
+
+}
+
+/******************************************* css start *******************************************/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--main-font);
+
+
+}
+
+.purple-color {
+    color: var(--main-color);
+}
+
+.hover-effect {
+    transition: var(--hover-effect);
+}
+
+.lh-1-4 {
+    line-height: 1.4;
+}
+
+.fs-18 {
+    font-size: var(--font-size-18);
+}
+
+.fw-900 {
+    font-weight: var(--fw-900);
+}
+
+.big-bgimg {
+    width: 100px;
+}
+
+.small-bgimg {
+    width: 50px;
+}
+
+/******************************************* header section *******************************************/
+.navbar-brand {
+    max-width: 100px;
+}
+
+.nav-loginbtn {
+    border: 2px solid var(--main-color);
+}
+
+#navbarNav .navbar-nav li:hover a {
+    color: var(--main-color) !important;
+}
+
+#navbarNav .navbar-nav li:hover .nav-loginbtn {
+    color: white !important;
+}
+
+.nav-loginbtn:hover {
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: white !important;
+    background-color: var(--main-color);
+}
+
+/******************************************* hero section *******************************************/
+.hero-section {
+    background: url('/assets/images/hero/hero-main-bg.png') no-repeat;
+    background-size: cover;
+    padding: 220px 0px;
+}
+
+.hero-section-text {
+    width: 50%;
+}
+
+.hero-section-text>p {
+    color: rgb(96, 96, 96);
+}
+
+.hero-startbtn {
+    background-color: var(--main-color);
+    cursor: pointer;
+    min-height: 50px;
+    max-width: 170px;
+    border: 2px solid #c14ae200;
+}
+
+.hero-startbtn:hover {
+    max-width: 190px;
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: black !important;
+}
+
+.hero-shape1 {
+    right: -80px;
+    top: -170px;
+}
+
+.hero-shape2 {
+    right: -90px;
+    top: -170px;
+    animation: rotating6 alternate ease-in-out infinite 6s;
+}
+
+.hero-shape3 {
+    left: -120px;
+    bottom: -120px;
+}
+
+.hero-shape4 {
+    left: calc(50% - 160px);
+    bottom: -140px;
+    animation: rotating5 alternate ease-in-out infinite 10s;
+}
+
+.hero-shape5 {
+    left: -40px;
+    bottom: 130px;
+    animation: rotating3 alternate ease-in-out infinite 8s;
+}
+
+.hero-shape6 {
+    top: -70px;
+    left: 50%;
+    animation: rotating4 alternate ease-in-out infinite 7s;
+
+}
+
+.hero-shape7 {
+    right: 0px;
+    bottom: 0px;
+    animation: rotating2     alternate ease-in-out infinite 9s;
+}
+
+.hero-shape8 {
+    top: -100px;
+    left: -30px;
+    animation: rotating alternate ease-in-out infinite 6s;
+}
+
+/******************************************* about & service section *******************************************/
+.about-service {
+    background-size: cover;
+    background-image: url('/assets/images/about/about.png');
+    background-repeat: no-repeat;
+    background-position: 0px -120px;
+}
+
+/******************************************* trust section *******************************************/
+
+.trust-section {
+    padding: 120px 0px;
+}
+
+.trust-up-text>p,
+.trust-up-text-new {
+    letter-spacing: 5px;
+}
+
+.trust-card-img {
+    max-width: 110px;
+}
+
+.trust-card-group {
+    margin: 100px 0px 40px;
+    row-gap: 35px;
+}
+
+.trust-card {
+    min-height: 470px;
+    padding-top: 50px;
+}
+
+.trust-card img {
+    padding: 0 16px;
+}
+
+.trust-card-group .card-img {
+    min-height: 160px;
+}
+
+.trust-shape1 {
+    top: -50px;
+    right: -80px;
+}
+
+.trust-shape2 {
+    top: -58px;
+    right: -54px;
+    animation: rotating alternate ease-in-out infinite 6s;
+}
+
+.trust-shape3 {
+    top: 99px;
+    left: -55px;
+    animation: 7s ease-in-out 0s infinite alternate none running rotating4;
+}
+
+/******************************************* about-section *******************************************/
+
+
+.about-section {
+    padding-bottom: 180px;
+}
+
+.about-img-1 {
+    top: 0px;
+    left: calc(50% + 20px);
+}
+
+.about-img-2 {
+    bottom: -100px;
+    right: -80px;
+}
+
+.about-img-div {
+    min-height: 480px;
+}
+
+/******************************************* what we do section *******************************************/
+
+.whatwe-main-section {
+    padding: 120px 0px;
+}
+
+.what-main-heading {
+    width: 70%;
+}
+
+.whatwe-card-container {
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(120, 123, 125, 0.053), -10px -10px 10px rgba(149, 153, 155, 0.03);
+    min-height: 408px;
+}
+
+.what-card-imgcontainer {
+    width: 80px;
+    height: 80px;
+}
+
+.whatwecard-boximg {
+    bottom: -17%;
+    right: -21%;
+    z-index: -1;
+}
+
+.whatwe-blue-box {
+    left: -6%;
+    top: 28%;
+}
+
+.whatwe-green-box {
+    right: -9%;
+    bottom: -3%;
+}
+
+.whatwe-gray {
+    left: -4%;
+    top: 20%;
+    animation: rotating alternate ease-in-out infinite 6s;
+}
+
+.whatwe-yellow-circle {
+    left: -4%;
+    top: 70%;
+    animation: rotating5 alternate ease-in-out infinite 10s;
+
+}
+
+.whatwe-yellow {
+    right: -3%;
+    top: 20%;
+    animation: rotating3 alternate ease-in-out infinite 8s;
+}
+
+.whatwe-blue {
+    right: -3%;
+    bottom: -80px;
+    animation: rotating5 alternate ease-in-out infinite 10s;
+}
+
+/*  */
+.whatwe-arrow {
+    bottom: 12%;
+    left: 45%;
+    width: 30px;
+}
+
+.whatwe-card-container:hover .whatwe-arrow-main .whatwe-arrow {
+    transform: translateX(10px);
+}
+
+/******************************************* game section *******************************************/
+
+.games-section {
+    padding: 120px 0px 0px;
+    background-image: url('/assets/images/games/game-main-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.games-main {
+    margin: 100px 0px 40px;
+}
+
+.game1-text2 {
+    color: #fe6686;
+}
+
+.game2-text2 {
+    color: #54d6a1;
+}
+
+.game3-text2 {
+    color: #d441ff;
+}
+
+.game-section-btn,
+.game-section-btn1,
+.game-section-btn2 {
+    background-color: transparent;
+    border: 2px solid #c04ae2;
+}
+
+.game-section-btn {
+    cursor: pointer;
+    min-height: 50px;
+    max-width: 170px;
+
+}
+
+.game-section-btn:hover {
+    color: white !important;
+}
+
+.game-section-btn1 {
+    border: 2px solid #fe6686;
+}
+
+.game-section-btn1:hover {
+    background-color: #fe6686;
+}
+
+.game-section-btn2 {
+    border: 2px solid #54d6a1;
+}
+
+.game-section-btn2:hover {
+    background-color: #54d6a1;
+}
+
+.game-section-btn3:hover {
+    background-color: #c04ae2;
+}
+
+.game-shape1 {
+    top: -50px;
+    left: -90px;
+}
+
+.game-shape2 {
+    bottom: -100px;
+    right: -90px;
+}
+
+.game-1-outline {
+    max-width: 19px;
+    top: 61px;
+    left: 26px;
+}
+
+.game-2-outline {
+    max-width: 37px;
+    top: 10px;
+    left: 11px;
+}
+
+.game-3-outline {
+    max-width: 35px;
+    top: 60px;
+    left: 23px;
+}
+
+.game1-bg {
+    top: 30px;
+    left: 35px;
+}
+
+.game1-overlay {
+    top: 130px;
+    left: 50px;
+}
+
+.game2-bg {
+    top: 30px;
+    right: 30px;
+
+}
+
+.game2-overlay {
+    top: 130px;
+    right: 50px;
+    max-width: 400px;
+    max-height: 278px;
+}
+
+
+/* Join-section Start */
+.join-section {
+    background-size: cover;
+    padding: 600px 0px 100px
+}
+
+.join-bg-img1 {
+    left: calc(-250px - 0%);
+    bottom: -50px;
+}
+
+.join-bg-img2 {
+    right: -250px;
+    bottom: 50px;
+}
+
+/******************************************* Swiper section *******************************************/
+
+.subscribe-plane-mainsection,
+.contactus-main-section,
+.footer-main-section,
+.whatwe-main-section {
+    padding: 100px 0;
+}
+
+.swiper-main-section {
+    padding: 70px 0px 140px;
+}
+
+.swiper-detail-main-container {
+    padding-top: 160px;
+}
+
+.main-swiper-page {
+    width: 100% !important;
+    padding-left: 80px;
+
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 10px;
+    background-color: #c04ae2;
+}
+
+.swiper-pagination-bullet {
+    left: 0px !important;
+    transition: all 0.5s;
+}
+
+.sub-heading {
+    letter-spacing: 4px;
+    color: var(--secondary-text-color);
+}
+
+.swiper-description {
+    color: var(--primary-text-color);
+}
+
+.swiper-producer {
+    color: #938e8eba;
+}
+
+.swiper-img-container {
+    width: 400px;
+    height: 480px;
+    clip-path: polygon(14% 8%, 100% 0, 100% 100%, 14% 91%);
+}
+
+.testimo-blue-box {
+    top: -15%;
+    left: -4%;
+}
+
+.testimo-skyblue {
+    top: 4%;
+    width: 30px;
+    animation: rotating alternate ease-in-out infinite 6s;
+}
+
+.testimo-yellow {
+    top: 20%;
+    right: 5%;
+    animation: 7s ease-in-out 0s infinite alternate none running rotating4;
+}
+
+.testimo-blue {
+    bottom: -20%;
+    right: -2%;
+    animation: rotating7 alternate ease-in-out infinite 6s;
+}
+
+.testimo-quote-img {
+    top: 35%;
+    left: 0%;
+    width: 70px;
+}
+
+.tesimo-border {
+    bottom: -8%;
+    right: 18%;
+    width: 250px;
+    z-index: -1;
+}
+
+
+
+/******************************************* subscribe section *******************************************/
+
+.subscribe-plane-mainsection {
+    background-color: aliceblue;
+}
+
+.subscribe-main-heading {
+    width: 45%;
+}
+
+.subscribe-card-main-container {
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(155, 159, 161, 0.053), -10px -10px 10px rgba(156, 160, 161, 0.03);
+
+}
+
+.card-heading {
+    line-height: 18px;
+}
+
+.card-one::after,
+.card-two::after,
+.card-three::after {
+    content: "";
+    top: 0;
+    left: 7%;
+    background-color: rgb(255, 234, 0);
+    height: 8px;
+    width: 70px;
+    position: absolute;
+}
+
+.card-two::after {
+    background-color: rgb(13, 186, 186);
+}
+
+.card-three::after {
+    background-color: green;
+}
+
+/******************************************* contact us section *******************************************/
+.contact-input-data {
+    background-color: #fff;
+    resize: none;
+    box-shadow: 10px 10px 5px rgba(58, 60, 61, 0.053), -10px -10px 5px rgba(58, 60, 61, 0.03);
+}
+
+.contact-input-data:focus {
+    box-shadow: 10px 10px 5px rgba(58, 60, 61, 0.053), -10px -10px 5px rgba(58, 60, 61, 0.03);
+}
+
+.contactus-btn {
+    background-color: var(--secondary-text-color);
+    padding: 30px;
+}
+
+.contactus-btn:hover {
+    padding: 40px;
+    background-color: transparent;
+}
+
+.contactus-btn:hover,
+.contactus-btn:focus {
+    background-color: var(--secondary-text-color) !important;
+}
+
+.form-control::placeholder {
+    color: var(--primary-text-color);
+}
+
+.contact-blue-box {
+    bottom: -10%;
+    right: -5%;
+}
+
+.contact-blue {
+    bottom: -3%;
+    right: -1%;
+    animation: rotating8 alternate ease-in-out infinite 6s;
+}
+
+.contact-yellow {
+    top: 13%;
+    left: -3%;
+    animation: 7s ease-in-out 0s infinite alternate none running rotating4;
+}
+
+/******************************************* footer section *******************************************/
+.footer-logo {
+    max-width: 100px;
+}
+
+.footer-input-data:focus {
+    box-shadow: none;
+    background-color: #b2c4c631;
+}
+
+.footer-input-data {
+    background-color: #b2c4c631;
+}
+
+.footer-msg-icon {
+    top: 33%;
+    right: 5%;
+}
+
+.footer-link-container li {
+    padding-bottom: 4px;
+}
+
+.footer-link-container li a:hover,
+.footer-link-email li:hover a,
+.footer-link-email li:hover {
+    color: var(--main-color) !important;
+}
+
+/******************************************* Media-Query Start *******************************************/
+
+@media screen and (max-width: 1396px) {
+    .tesimo-border {
+        right: 21%;
+    }
+
+    .testimo-quote-img {
+        left: -6%;
+    }
+
+    .what-main-heading {
+        width: 85%;
+    }
+
+    .card-textbox p,
+    .card-textbox h5 {
+        padding: 0px 16px !important;
+    }
+
+    .main-swiper-page {
+        padding-left: 0px !important;
+        margin-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    /*trust section */
+
+    .trust-card-group .card-title,
+    .trust-card-group .card-text {
+        padding: 0px !important;
+    }
+
+    /*about section */
+    .about-img-1 {
+        top: 50px;
+        left: 50px;
+    }
+
+    .about-img-2 {
+        bottom: -100px;
+        right: 50px;
+    }
+
+    .about-img-div {
+        position: relative;
+    }
+
+
+    .contactus-mainheading,
+    .subscribe-mainheaing {
+        width: 60% !important;
+    }
+
+    .tesimo-border {
+        right: 20%;
+    }
+
+    .testimo-quote-img {
+        left: -8%;
+    }
+
+    .whatwe-card-container {
+        min-height: 428px;
+    }
+
+    .whatwe-arrow {
+        bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .for_nav_color {
+        background: rgba(255, 253, 253);
+        box-shadow: 0 8px 20px 0 rgba(222, 49, 188, 0.37);
+        /* border: 1px solid rgba(203, 63, 166, 0.60); */
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        z-index: 1;
+    }
+
+    .for_nav_color ul {
+        padding: 10px 0px;
+    }
+
+    .subscribe-plane-mainsection,
+    .contactus-main-section,
+    .footer-main-section,
+    .whatwe-main-section,
+    .trust-section {
+        padding: 70px 0;
+    }
+
+    .about-footer-list {
+        align-items: start !important;
+    }
+
+    .contactus-mainheading,
+    .subscribe-mainheaing {
+        width: 65% !important;
+    }
+
+    .swiper-img-container {
+        width: 450px;
+    }
+
+    .tesimo-border {
+        left: 20%;
+        bottom: -4%;
+    }
+
+    .testimo-quote-img {
+        left: -12%;
+        top: 5%;
+    }
+
+    .what-main-heading {
+        width: 100%;
+    }
+
+    .testimo-blue-box {
+        top: 1%;
+        left: -8%;
+    }
+
+    .swiper-main-section {
+        padding: 0px 0px 40px;
+    }
+
+    .swiper-detail-main-container {
+        padding-top: 30px;
+    }
+
+    .testimo-blue-box {
+        top: -10%;
+        left: -15%;
+        width: 60px;
+    }
+
+    .testimo-skyblue {
+        top: -3%;
+        left: -15%;
+    }
+
+    .testimo-yellow {
+        right: -10%;
+    }
+
+    /*game section */
+    .games-1-bg-border {
+        left: 0px;
+        max-width: 100%;
+    }
+
+    .games-2-bg-border {
+        right: 0;
+        max-width: 100%;
+    }
+
+    .game1-bg {
+        left: 5px;
+    }
+
+    .game2-bg {
+        right: 5px;
+    }
+
+    .game1-overlay {
+        left: 15px;
+    }
+
+    .game2-overlay {
+        right: calc(50% - 180px);
+        max-width: 360px;
+    }
+
+    .game-1-outline {
+        max-width: 18px;
+    }
+
+    .game-2-outline {
+        max-width: 32px;
+    }
+
+    .game-3-outline {
+        max-width: 30px;
+    }
+
+    /*trust section */
+    .trust-card-img {
+        max-width: 120px;
+    }
+
+    .card-textbox {
+        padding-top: 25px;
+    }
+
+    .trust-card-group {
+        padding: 0px 40px;
+        margin: 40px 0px 40px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .whatwe-card-container {
+        min-height: 380px;
+    }
+
+    .swiper-img-container {
+        width: 450px;
+    }
+
+    .tesimo-border {
+        left: 10%;
+    }
+
+    .hero-section {
+        padding: 160px 0px 120px;
+    }
+
+    /*game section */
+    .games-section {
+        background-image: url('/assets/images/games/game-main-bg2.png');
+        background-position: center bottom;
+
+    }
+
+    .game-div {
+        min-height: 460px;
+    }
+
+    .game-1-outline {
+        max-width: 14px;
+        left: 23px;
+    }
+
+    .game-2-outline,
+    .game-3-outline {
+        max-width: 26px;
+    }
+
+    .game-1-outline {
+        max-width: 14px;
+    }
+
+    .game-2-outline {
+        max-width: 26px;
+    }
+
+    .game-3-outline {
+        max-width: 25px;
+    }
+
+    .games-1-bg-border {
+        left: calc(50% - 225px);
+    }
+
+    .game1-bg,
+    .game2-bg {
+        left: calc(50% - 223px);
+    }
+
+    .game1-overlay {
+        left: calc(50% - 195px);
+    }
+
+    .games-2-bg-border {
+        left: calc(50% - 185px);
+    }
+
+    .trust-card-group {
+        padding: 0px 0px;
+    }
+
+    .trust-card {
+        width: 440px;
+    }
+
+    .join-section {
+
+        padding: 20px 0px 70px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+    .subscribe-plane-mainsection,
+    .contactus-main-section,
+    .footer-main-section,
+    .whatwe-main-section {
+        padding: 50px 0;
+    }
+
+    .join-section {
+        padding: 10px 0px 60px;
+    }
+
+    .what-main-heading {
+        font-size: 22px;
+    }
+
+    .what-card-imgcontainer {
+        width: 60px;
+        height: 60px;
+    }
+
+    .whatwe-blue-box {
+        top: 46%;
+    }
+
+    .whatwe-gray {
+        top: 30%;
+    }
+
+    .swiper-img-container {
+        width: 360px;
+        height: 400px;
+    }
+
+    .subscribe-mainheaing,
+    .contactus-mainheading {
+        width: 100% !important;
+    }
+
+    .login-btn {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    /*game section */
+    .game-div {
+        min-height: 400px;
+    }
+
+    .game-1-outline {
+        max-width: 10px;
+    }
+
+    .game-2-outline,
+    .game-3-outline {
+        max-width: 20px;
+    }
+
+    .games-1-bg-border,
+    .games-2-bg-border {
+        display: none;
+    }
+
+    .game1-bg {
+        top: 0px;
+        left: -5px;
+    }
+
+    .game2-bg {
+        top: 0px;
+        right: -5px;
+        left: unset;
+    }
+
+    .game1-overlay {
+        top: 100px;
+        left: 0px;
+    }
+
+    .game2-overlay {
+        top: 70px;
+        right: -10px;
+    }
+
+    .games-main {
+        margin: 0px 0px 40px;
+    }
+
+    .trust-card-img {
+        max-width: 100px;
+    }
+
+    .trust-card,
+    .card-textbox {
+        padding-top: 0px;
+    }
+
+    .trust-card {
+        min-height: 370px;
+    }
+
+    .testimo-quote-img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .swiper-img-container {
+        width: 310px;
+        height: 360px;
+    }
+
+    .navbar-brand {
+        max-width: 70px;
+    }
+
+    .trust-up-text {
+        margin-bottom: 50px;
+    }
+
+    .game-div {
+        min-height: 300px;
+    }
+
+    .game2-overlay {
+        right: calc(50% - 136px);
+        max-width: 272px;
+        max-height: 179px;
+        top: 90px;
+    }
+}
+
+/* Animation Key */
+@keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        top: -100px;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        top: 10%;
+    }
+}
+@keyframes rotating2 {
+    0% {
+        top: 85%;
+    }
+    100% {
+        top: 40%;
+    }
+}
+@keyframes rotating3 {
+    0% {
+        top: 90%;
+    }
+    
+    100% {
+        top: 50%;
+    }
+}
+@keyframes rotating4 {
+    0% {
+        top: 40%;
+    }
+    
+    100% {
+        top: 10%;
+    }
+}
+@keyframes rotating5 {
+    0% {
+        left: 55%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+@keyframes rotating6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        top: -170px;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        top: 10%;
+    }
+}
+@keyframes rotating7 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        bottom: 10%;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+       bottom: -30%;
+    }
+}
+@keyframes rotating8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        bottom: 30%;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+       bottom: -20px;
+    }
+}
